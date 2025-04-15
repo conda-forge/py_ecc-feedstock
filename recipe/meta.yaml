@@ -1,5 +1,5 @@
 {% set name = "py_ecc" %}
-{% set version = "7.0.1" %}
+{% set version = "8.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py_ecc-{{ version }}.tar.gz
-  sha256: 557461f42e57294d734305a30faf6b8903421651871e9cdeff8d8e67c6796c70
+  sha256: 56aca19e5dc37294f60c1cc76666c03c2276e7666412b9a559fa0145d099933d
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - eth-typing >=3.0.0
     - eth-utils >=2.0.0
     - cached-property >=1.5.1
-    
+
 test:
   imports:
     - py_ecc
